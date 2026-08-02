@@ -10,8 +10,8 @@ export default function News() {
     },
     {
       date: "25 de abril",
-      description: "Roda de Conversa: um espaço de escuta e acolhimento",
-      title: "Próxima roda de conversa acontece no próximo sábado",
+      title: "Roda de Conversa: um espaço de escuta e acolhimento",
+      description: "Próxima roda de conversa acontece no próximo sábado com profissionais e associados.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
     },
     {
@@ -32,7 +32,7 @@ export default function News() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {news.map((item, index) => (
-            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+            <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
               <img 
                 src={item.image} 
                 alt={item.title}
@@ -41,8 +41,8 @@ export default function News() {
               <div className="p-6">
                 <p className="text-sm text-purple-600 font-semibold mb-2">{item.date}</p>
                 <h3 className="text-xl font-bold text-purple-900 mb-3">{item.title}</h3>
-                <p className="text-gray-700 mb-4">{item.description}</p>
-                <a href="#" className="text-purple-700 font-semibold hover:text-purple-900">
+                <p className="text-gray-700 mb-4 text-sm">{item.description}</p>
+                <a href="#" className="text-purple-700 font-semibold hover:text-purple-900 transition">
                   Leia mais →
                 </a>
               </div>
@@ -51,7 +51,7 @@ export default function News() {
         </div>
 
         <div className="text-center mt-12">
-          <button className="border-2 border-purple-700 text-purple-700 px-8 py-3 rounded-lg hover:bg-purple-50 font-semibold">
+          <button className="border-2 border-purple-700 text-purple-700 px-8 py-3 rounded-lg hover:bg-purple-50 font-semibold transition transform hover:scale-105">
             Ver Todas as Notícias
           </button>
         </div>

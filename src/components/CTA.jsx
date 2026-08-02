@@ -14,10 +14,10 @@ export default function CTA() {
           Associe-se à ANAPEF e faça parte dessa rede de apoio e transformação. Juntos, podemos conquistar mais qualidade de vida e visibilidade para a fibromialgia.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="bg-white text-purple-700 px-8 py-3 rounded-lg hover:bg-gray-100 font-semibold">
+          <button className="bg-white text-purple-700 px-8 py-3 rounded-lg hover:bg-gray-100 font-semibold transition transform hover:scale-105">
             Seja Sócio
           </button>
-          <button className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 font-semibold">
+          <button className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:bg-opacity-10 font-semibold transition transform hover:scale-105">
             Saiba Mais
           </button>
         </div>

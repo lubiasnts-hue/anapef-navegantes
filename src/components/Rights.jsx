@@ -9,7 +9,7 @@ export default function Rights() {
     },
     {
       title: "Benefício por Incapacidade",
-      description: "Pessoas com fibromialgia grave podem solicitar auxílio-doença ou aposentadoria por invalidez.",
+      description: "Pessoas com fibromialgia grave podem solicitar auxílio-doença ou aposentadoria.",
       icon: "💼"
     },
     {
@@ -19,7 +19,7 @@ export default function Rights() {
     },
     {
       title: "Acesso a Medicamentos",
-      description: "Acesso a medicamentos específicos através do SUS e programas de assistência farmacêutica.",
+      description: "Acesso a medicamentos específicos através do SUS e programas de assistência.",
       icon: "💊"
     },
     {
@@ -44,8 +44,8 @@ export default function Rights() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rights.map((right, index) => (
-            <div key={index} className="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition">
-              <div className="text-4xl mb-4">{right.icon}</div>
+            <div key={index} className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+              <div className="text-5xl mb-4">{right.icon}</div>
               <h3 className="text-xl font-bold text-purple-900 mb-3">{right.title}</h3>
               <p className="text-gray-700">{right.description}</p>
             </div>
@@ -53,12 +53,12 @@ export default function Rights() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-16 bg-purple-700 text-white rounded-lg p-12 text-center">
+        <div className="mt-16 bg-gradient-to-r from-purple-700 to-purple-600 text-white rounded-xl p-12 text-center">
           <h3 className="text-3xl font-bold mb-4">Saiba Mais Sobre Seus Direitos</h3>
-          <p className="text-lg mb-8">
-            Entre em contato conosco para receber orientações personalizadas sobre seus direitos e como acessá-los.
+          <p className="text-lg mb-8 opacity-90">
+            Entre em contato conosco para receber orientações personalizadas sobre seus direitos.
           </p>
-          <button className="bg-white text-purple-700 px-8 py-3 rounded-lg hover:bg-gray-100 font-semibold">
+          <button className="bg-white text-purple-700 px-8 py-3 rounded-lg hover:bg-gray-100 font-semibold transition transform hover:scale-105">
             Fale Conosco
           </button>
         </div>
